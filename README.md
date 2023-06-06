@@ -1,20 +1,33 @@
-# React Hooks
+# React Modal
 
 ## Usage
 
-```typescript
-import {
-    useCallbackState,
-    useEvents,
-    useObjectCallback,
-    useObjectEffect,
-    useObjectMemo,
-    useOutside,
-    usePromiseState,
-    useRefEffect,
-    useRefReady,
-    useTrustedPromise,
-    useTrustedState,
-} from '@cyberia-studio/react-modal';
-```
+```tsx
+import useModal, { useModalContext } from '@cyberia-studio/react-modal';
 
+const Dialog: FC = () => {
+    const {
+        close,
+        isOpen,
+        open,
+        set
+    } = useModalContext();
+
+    return <button onClick={close}>Please close me</button>
+}
+
+const Page: FC = () => {
+    const [modal, modalControls] = useModal();
+
+    const handleShowModal = () => modalControls.set(<Dialog />);
+
+    return (
+        <div>
+            {modal}
+            <h1>Modal block will be teleported to the root or body element</h1>
+            <button onClick={handleShowModal}>
+        </div>
+    )
+}
+
+```
