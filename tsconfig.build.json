@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "sourceMap": false
+    },
+    "exclude": ["node_modules", "dist", "templates", "website", "types"]
+}

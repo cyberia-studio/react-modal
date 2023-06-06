@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "pretty": true,
+        "skipLibCheck": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "jsx": "react-jsx",
+        "strict": true,
+        "lib": ["ESNEXT", "DOM"],
+        "paths": {
+            "@/*": ["./*"]
+        }
+    },
+    "exclude": ["node_modules", "dist", "templates", "website", "types"]
+}
