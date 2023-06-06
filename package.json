@@ -1,24 +1,24 @@
 {
-    "name": "@cyberia-studio/react-hooks",
-    "description": "React hooks collection",
+    "name": "@cyberia-studio/react-modal",
+    "description": "React modal",
     "version": "1.0.3",
     "license": "MIT",
     "keywords": [
         "typescript",
         "react",
-        "hooks"
+        "modal"
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/cyberia-studio/react-hooks.git"
+        "url": "git+https://github.com/cyberia-studio/react-modal.git"
     },
     "author": {
         "name": "Cyberia",
         "url": "https://cyberia.studio"
     },
-    "homepage": "https://github.com/cyberia-studio/react-hooks#readme",
+    "homepage": "https://github.com/cyberia-studio/react-modal#readme",
     "bugs": {
-        "url": "https://github.com/cyberia-studio/react-hooks/issues"
+        "url": "https://github.com/cyberia-studio/react-modal/issues"
     },
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
